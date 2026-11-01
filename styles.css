@@ -185,3 +185,24 @@ h1 em, h2 em { color: var(--moss); font-style: normal; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
+
+/* 専用ページ（料理・企業） */
+.page-hero { padding-top: 84px; padding-bottom: 74px; }
+.page-hero h1 { margin: 0; font-family: var(--serif); font-weight: 400; font-size: clamp(38px, 4.6vw, 60px); line-height: 1.5; letter-spacing: .09em; }
+.page-hero h1 em { color: var(--moss); font-style: normal; }
+.page-hero__lead { margin: 24px 0 0; color: #5d615a; font-size: 13px; line-height: 2.25; letter-spacing: .035em; }
+.page-block { padding-top: 84px; padding-bottom: 84px; }
+.page-block .eyebrow { margin-bottom: 12px; }
+.page-block__title { margin: 0 0 34px; font-family: var(--serif); font-size: clamp(28px, 3.2vw, 40px); line-height: 1.55; font-weight: 400; letter-spacing: .1em; }
+.feature-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0 clamp(24px, 4vw, 60px); }
+.feature-list li { padding: 14px 4px; border-bottom: 1px solid var(--line); font-size: 13px; letter-spacing: .03em; }
+.feature-list li::before { content: "—"; color: var(--moss); margin-right: 10px; }
+.flow-list { margin: 0; padding-left: 20px; }
+.flow-list li { margin-bottom: 14px; font-size: 13px; line-height: 2; letter-spacing: .03em; }
+.flow-list strong { font-family: var(--serif); font-weight: 400; color: var(--clay); margin-right: 6px; }
+.page-links { display: flex; flex-wrap: wrap; gap: 14px 42px; margin-top: 6px; }
+@media (max-width: 640px) {
+  .page-hero { padding-top: 58px; padding-bottom: 52px; }
+  .page-block { padding-top: 58px; padding-bottom: 58px; }
+  .feature-list { grid-template-columns: 1fr; }
+}
